@@ -1,0 +1,17 @@
+{
+    "name": "social-media",
+    "version": "1.0.0",
+    "description": "A social media application",
+    "main": "index.js",
+    "scripts": {
+      "start:api": "cd ./tweets && node tweetApi.js",
+      "start:users": "cd ./users && node login_register.js && node homepage.js",
+      "start": "concurrently \"npm run start:api\" \"npm run start:users\""
+    },
+    "author": "Your Name",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^6.2.2"
+    }
+  }
+  
